@@ -14485,6 +14485,7 @@ ${nonManifold.join("\n")}`);
     blue: () => blue,
     bounding_box: () => bounding_box,
     clone: () => clone2,
+    colorize: () => colorize,
     cone: () => cone,
     crimson: () => crimson,
     cube: () => cube,
@@ -18991,6 +18992,11 @@ ${nonManifold.join("\n")}`);
   }
   function clone2(shape) {
     return shape.clone();
+  }
+  function colorize(shape, hex) {
+    let color = hexToColor(hex);
+    let coloredSolid = (0, import_colors2.colorize)(color, shape.solid);
+    return new Shape(coloredSolid);
   }
   function store(shape) {
     Core.getRenderGroupManager().storeShape(shape.clone());
