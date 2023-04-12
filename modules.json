@@ -1,4 +1,14 @@
 {
+  "painter": {
+    "tabs": [
+      "Painter"
+    ]
+  },
+  "unity_academy": {
+    "tabs": [
+      "UnityAcademy"
+    ]
+  },
   "plotly": {
     "tabs": [
       "Plotly"
@@ -72,5 +82,8 @@
     "tabs": [
       "Repl"
     ]
+  },
+  "remote_execution": {
+    "tabs": []
   }
 }
